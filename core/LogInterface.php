@@ -1,6 +1,7 @@
 <?php
 namespace core;
-interface LogInterface {
+interface LogInterface 
+{
 	public static function log($str);
 	public static function write();
 }

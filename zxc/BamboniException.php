@@ -1,6 +1,5 @@
 <?php
 namespace zxc;
-
-class BamboniException extends \Exception {
-
+class BamboniException extends \RuntimeException 
+{
 }

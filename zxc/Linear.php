@@ -1,16 +1,20 @@
 <?php
 namespace zxc;
-// Ëèíåéíîå óðàâíåíèå a*x + b = 0
-
-class Linear {
+// Ð›Ð¸Ð½ÐµÐ¹Ð½Ð¾Ðµ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ a*x + b = 0
+class Linear
+{
 	protected $x;
-	function ur($a, $b){
-		if ($a != 0) {
+	function ur($a, $b)
+	{
+		if ($a != 0) 
+		{
 			$x = -1*$b/$a;
 			$this->x = $x;
-			return $x;
+			//Log::log("Equation: $a*x + $b = 0");
+			Log::log("Equation is linear");
+			return array($x);
 		}
-		throw new BamboniException("no solutions");	
+		throw new BamboniException("doesn't exist");
 	}
 }
 ?>
