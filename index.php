@@ -1,57 +1,30 @@
 <?php
-	class BamboniException extends RuntimeException {
-	}
+ini_set("display_errors",1);error_reporting(-1);
+include_once("core/EquationInterface.php");
+include_once("core/LogInterface.php");
+include_once("core/LogAbstract.php");
+include_once("zxc/BamboniException.php");
+include_once("zxc/Linear.php");
+include_once("zxc/Quadratic.php");
+include_once("zxc/Log.php");
+
+$a = 1;
+$b = 9;
+$c = 1;
+
+try {
+	$solver = new zxc\Quadratic($a, $b, $c);
+	$roots = $solver->ur2($a, $b, $c);
 	
-	class A {
-		protected $a;
-		protected $b;
-		protected $x;
-			function __construct ($a, $b) {
-				$this->a = $a;
-				$this->b = $b;
-			}	
-			function ur($a, $b){	
-				if ($a !=0){
-					$x = -1*$b/$a;
-					$this->x = $x;
-					return array($x);
-				}
-				else{
-					throw new BamboniException ("Нет решения");
-				}
-			}
+	if (is_array($roots)) {
+		zxc\Log::log("two roots");
+		zxc\Log::log("roots: " . $roots[0] . " " . $roots[1]);
+	} else {
+		zxc\Log::log("one root");
+		zxc\Log::log("root: " . $roots);
 	}
-	
-	class B extends A {
-		protected $c;
-		protected $x2;
-		function __construct ($a, $b, $c){
-			parent::__construct($a, $b);
-			$this->c=$c;
-		}
-		protected function des($a, $b, $c){
-			$des = $b*$b - 4*$a*$c;
-			return $des;
-		}
-		function ur2($a, $b, $c){
-			if ($a = 0){
-				return $this->ur($a, $b);
-			}
-			else if ($des > 0){
-				$des = $this->$des($a, $b, $c);
-				$x = (-1*$b + sqrt($des))/(2*$a);
-				$x2 = (-1*$b - sqrt($des))/(2*$a);
-				$this->x = $x;
-				$this->x2 = $x2;
-				return array ($x, $x2);
-			} else if ($des = 0) {
-				$des = $this->$des($a, $b, $c);
-				$x = (-1*$b)/(2*$a);
-				$this->x = $x;
-				return array($x);
-			}
-			else {
-			throw new BamboniException ("Нет решений");
-			}
-		}
-	}
+}catch(zxc\BamboniException $ex) {
+	zxc\Log::log($ex->getMessage());
+}
+zxc\Log::write();
+?>
