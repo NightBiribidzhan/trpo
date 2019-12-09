@@ -6,6 +6,7 @@ class Linear
 	protected $x;
 	function ur($a, $b)
 	{
+		Log::log("IMBA sensation: $a*x + $b = 0");
 		if ($a != 0) 
 		{
 			$x = -1*$b/$a;

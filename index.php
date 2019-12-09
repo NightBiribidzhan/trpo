@@ -14,6 +14,9 @@ foreach (["a", "b", "c"] as $co) {
     $line = stream_get_line(STDIN, 1024, PHP_EOL);
     $co_arr[$co] = $line === "" ? 0 : $line;
 }
+
+zxc\Log::log('Version '.file_get_contents('./version'));
+
 $a = $co_arr["a"];
 $b = $co_arr["b"];
 $c = $co_arr["c"];

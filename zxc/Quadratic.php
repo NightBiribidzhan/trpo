@@ -18,6 +18,7 @@ class Quadratic extends Linear implements \core\EquationInterface
 		}
 		$dir = sqrt($this->dir($a, $b, $c));
 		Log::log("Equation is quadratic");
+		Log::log("IMBA tentation: $a*x^2 + $b*x + $c = 0");
 		if ($dir > 0) 
 		{
 			$x = (-1*$b + ($dir))/(2*$a);
