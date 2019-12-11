@@ -1,3 +1,8 @@
+composer.bat
+zxc
 core
 version
 Log
+composer.json
+composer.phar
+/vendor/
