@@ -3,5 +3,6 @@ zxc
 core
 version
 Log
+composer
 composer.phar
 /vendor/
