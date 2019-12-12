@@ -1,0 +1,108 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "31f8fa60ded6133006589a648b59183a",
+    "packages": [
+        {
+            "name": "nightbiribidzhann/zxc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nightbiribidzhann/zxc.git",
+                "reference": "master"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "zxc": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DemidSamusaev",
+                    "email": "DemidSamusaev@mail.ru"
+                }
+            ],
+            "time": "2019-12-12T09:24:42+00:00"
+        },
+        {
+            "name": "rok9ru/ckeditorphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/ckeditorphp.git",
+                "reference": "71b57c497f0ad94a52bb5cabf9f31a8baf40c695"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CKEditorPHP": "",
+                    "CKEditorPHP\\view": "view",
+                    "CKEditorPHP\\core": "core",
+                    "CKEditorPHP\\plugins": "plugins"
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "CKEditorPHP",
+            "time": "2019-11-25T13:02:22+00:00"
+        },
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core.git",
+                "reference": "master"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "trpo-core": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "time": "2019-11-23T10:22:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "nightbiribidzhann/zxc": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,40 @@
+{
+	"minimum-stability": "dev",
+    "name": "nightbiribidzhann/trpo",
+	"license": "LGPL-3.0-or-later",
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "nightbiribidzhann/zxc",
+				"version": "dev-master",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/nightbiribidzhann/zxc.git",
+					"reference": "master"
+				},
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "zxc": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DemidSamusaev",
+                    "email": "DemidSamusaev@mail.ru"
+                }
+            ]
+			}
+		}
+	],
+	"require": {
+		"nightbiribidzhann/zxc": "dev-master"
+	}
+}
