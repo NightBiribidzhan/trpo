@@ -5,7 +5,7 @@
         "This file is @generated automatically"
     ],
     "content-hash": "d73537e153db30e6502876d610df01a2",
-    "packages": [
+	"packages": [
         {
             "name": "nightbiribidzhann/zxc",
             "version": "dev-master",
@@ -35,6 +35,7 @@
             "time": "2019-12-12T10:25:36+00:00"
         }
     ],
+    "packages": [
         {
             "name": "rok9ru/trpo-core",
             "version": "dev-master",
@@ -64,11 +65,11 @@
             "time": "2019-11-23T10:22:55+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nightbiribidzhann/zxc": 20,
-        "mougrim/php-xdebug-proxy": 20
+        "rok9ru/trpo-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
