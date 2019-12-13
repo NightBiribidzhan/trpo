@@ -19,7 +19,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "zxc": ""
+                    "zxc\\": ""
                 }
             },
             "license": [
@@ -36,8 +36,6 @@
 	],
 	"require": {
 		"nightbiribidzhann/zxc": "dev-master"
-	},
-	"require-dev": {
-		"mougrim/php-xdebug-proxy": "dev-master"
 	}
+	
 }
