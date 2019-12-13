@@ -5,4 +5,5 @@ version
 Log
 composer
 composer.phar
-/vendor/
+vendor
+build.bat
