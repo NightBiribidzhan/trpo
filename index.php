@@ -13,11 +13,12 @@ include_once("vendor/nightbiribidzhann/zxc/Log.php");
 include_once("vendor/nightbiribidzhann/zxc/Quadratic.php");
 
 $co_arr = [];
-$version = fopen("version", "r");
+$file = fopen("version", "r")
+$version = fread($file, 1024);
 
 foreach (["a", "b", "c"] as $co) {
-    echo "Enter " . $co . ": ";
-    $line = stream_get_line(STDIN, 1024, PHP_EOL);
+    //echo "Enter " . $co . ": ";
+    $line = readline("Enter " . $co . ": ");
     $co_arr[$co] = $line === "" ? 0 : $line;
 }
 $a = $co_arr["a"];
