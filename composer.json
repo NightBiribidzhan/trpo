@@ -35,6 +35,7 @@
 		}
 	],
 	"require": {
-		"nightbiribidzhann/zxc": "dev-master"
+		"nightbiribidzhann/zxc": "dev-master",
+		"rok9ru/trpo-core": "dev-master"
 	}
 }
