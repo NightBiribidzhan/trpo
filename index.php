@@ -13,17 +13,19 @@ include_once("vendor/nightbiribidzhann/zxc/Log.php");
 include_once("vendor/nightbiribidzhann/zxc/Quadratic.php");
 
 $co_arr = [];
-$file = fopen("version", "r")
-$version = fread($file, 1024);
+$version = fopen("version", "r");
 
 foreach (["a", "b", "c"] as $co) {
-    //echo "Enter " . $co . ": ";
-    $line = readline("Enter " . $co . ": ");
+    echo "Enter " . $co . ": ";
+    $line = stream_get_line(STDIN, 1024, PHP_EOL);
     $co_arr[$co] = $line === "" ? 0 : $line;
 }
-$a = $co_arr["a"];
-$b = $co_arr["b"];
-$c = $co_arr["c"];
+$a=readline("a=");
+$b=readline("b=");  
+$c=readline("c=");    
+//$a = $co_arr["a"];
+//$b = $co_arr["b"];
+//$c = $co_arr["c"];
 zxc\Log::log('Version '.file_get_contents('version'));
 //zxc\Log::log("Entered numbers: " . implode(", ", $co_arr));
 
