@@ -68,6 +68,7 @@
 	],
 	"require": {
 		"nightbiribidzhann/zxc": "dev-master",
-		"rok9ru/trpo-core": "dev-master"
+		"rok9ru/trpo-core": "dev-master",
+		"phpunit/phpunit": "^9.1@dev"
 	}
 }
